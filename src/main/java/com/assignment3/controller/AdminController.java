@@ -37,6 +37,11 @@ public class AdminController {
 		
 		return adminService.viewAllUsersDetails();
 	}
+	@GetMapping("/msg")
+	public String msg(){
+
+		return "msg";
+	}
 	
 	@GetMapping("/oneUser")
 	public ResponseEntity<?> viewOneUser(@RequestParam("id")long id) {
