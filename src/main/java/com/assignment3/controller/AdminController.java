@@ -31,6 +31,11 @@ public class AdminController {
 		return adminService.createOneUserDetails(userDto);
 		
 	}
+	@PostMapping("/save")
+	public String csave(@RequestBody UserDto userDto) {
+		return "save";
+
+	}
 	
 	@GetMapping("/allUsers")
 	public List<UserDto> viewAllUsers(){
